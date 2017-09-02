@@ -58,7 +58,7 @@ class Googleplayspider(CrawlSpider):
             item["Compatibility"] = titles.select('//*[@itemprop="softwareVersion"]/text()').extract()
             item["Content_rating"] = titles.select('//*[@itemprop="contentRating"]/text()').extract()
             item["Author_link"] = titles.select('//*[@class="dev-link"]/@href').extract()
-            item["Author_link_test"] = titles.select('//*[@class="content contains-text-link"]/a/@href').extract()
+            #item["Author_link_test"] = titles.select('//*[@class="content contains-text-link"]/a/@href').extract()
             item["Genre"] = titles.select('//*[@itemprop="genre"]/text()').extract()
             item["Price"] = titles.select('//*[@class="price buy id-track-click"]/span[2]/text()').extract()
             item["Rating_value"] = titles.select('//*[@class="score"]/text()').extract()
