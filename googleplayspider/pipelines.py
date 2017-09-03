@@ -48,25 +48,27 @@ class GoogleplayspiderPipeline(object):
         # sqlite
         self.con = sqlite3.connect(db)
         self.cur = self.con.cursor()
+        self.con.text_factory = str
         self.cur.execute('DROP TABLE IF EXISTS googleplay')
 
         '''
          Link; Item_name; Updated;
          Author; Filesize; Downloads;
          Version; Compatibility; Content_rating ;
-         Author_link; Genre; Price;
-         Rating_value; Review_number; Description ;
+         Author_link; Privacy_link;Genre;
+         Price; Rating_value; Review_number;
+         Description ;
          IAP; Developer_badge; Physical_address;
          Video_URL;Developer_ID ;
         '''
         self.cur.execute(
-            "CREATE TABLE IF NOT EXISTS" + " googleplay(link VARCHAR(100),item_name VARCHAR(50),"+
-            "last_update VARCHAR(50),author VARCHAR(30), filesize VARCHAR(30), downloads VARCHAR(50),"+
-            "version VARCHAR(30),  compatibility VARCHAR(50), content_rating VARCHAR(30),"+
-            "author_link VARCHAR(100),  genre VARCHAR(50), price VARCHAR(30),"+
-            "rating VARCHAR(20), review_number VARCHAR(30),description VARCHAR(300),"+
-            "iap VARCHAR(50), developer_badge VARCHAR(50),physicaladdr VARCHAR(100),"+
-            "video_url VARCHAR(50),developer_id VARCHAR(50))"
+            "CREATE TABLE IF NOT EXISTS" + " googleplay(Link VARCHAR(100),Item_name VARCHAR(50),"+
+            "Last_Updated VARCHAR(50),Author VARCHAR(30), Filesize VARCHAR(30), Downloads VARCHAR(50),"+
+            "Version VARCHAR(30),  Operation_system VARCHAR(50), Content_rating VARCHAR(30),"+
+            "Author_link VARCHAR(100),  Privacy_link VARCHAR(100), Genre VARCHAR(50), "+
+            "Price VARCHAR(30), Rating_value VARCHAR(20), Review_number VARCHAR(30),"+
+            "Description VARCHAR(50000), IAP VARCHAR(50), Developer_badge VARCHAR(50),"+
+            "Physical_address VARCHAR(100), Video_URL VARCHAR(50),Developer_ID VARCHAR(50))"
         )
 
 
@@ -84,14 +86,15 @@ class GoogleplayspiderPipeline(object):
 
     def process_item(self, item, spider):
         # sqlite
-        col = ','.join(item.keys())
-        placeholders = ','.join(len(item) * '?')
-        sql = 'INSERT INTO googleplay({}) values({})'
-        self.cur.execute(sql.format(col, placeholders), item.values())
-        self.con.commit()
+        if str(item['Link']).find('details?id') != - 1:
+            col = ','.join(item.keys())
+            placeholders = ','.join(len(item) * '?')
+            print('insert new value:'+item['Link'])
+            sql = 'INSERT INTO googleplay({}) values({})'
+            self.cur.execute(sql.format(col, placeholders), item.values())
 
-        # json
-        line = json.dumps(dict(item), ensure_ascii=False, encoding='utf8', indent=4) + ','
-        with open(fileName, 'a') as f:
-            f.write(line.encode('utf8'))
+            # json
+            line = json.dumps(dict(item), ensure_ascii=False, encoding='utf8', indent=4) + ','
+            with open(fileName, 'a') as f:
+                f.write(line.encode('utf8'))
         return item
