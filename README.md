@@ -29,20 +29,21 @@ Following data are explored and extracted from Google Play,
 5. Size;
 6. Total Downloads
 7. Version;
-8. Compatibility;
+8. Operation System Supported (Android level);
 9. Content Rating;
 10. Author Link;
-11. Genre;
-12. Price;
-13. Rating Value;
-14. Total Reviews;
-15. Description;
-16. IAP;
-17. Developer Badge;
-18. Physical Address
-19. Video URL;
-20. Developer ID;
- ## Output
+11. Privacy Policy Link (if any);
+12. Genre;
+13. Price;
+14. Rating Value;
+15. Total Reviews;
+16. Description;
+17. IAP;
+18. Developer Badge;
+19. Physical Address
+20. Video URL;
+21. Developer ID;
+## Output
  The output will be redirect to the sqlite DB named ```googleplay.db```
 
   
