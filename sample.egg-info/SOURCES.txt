@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+googleplayspider/__init__.py
+googleplayspider/items.py
+googleplayspider/pipelines.py
+googleplayspider/settings.py
+googleplayspider/spiders/__init__.py
+googleplayspider/spiders/crawler.py
+sample.egg-info/PKG-INFO
+sample.egg-info/SOURCES.txt
+sample.egg-info/dependency_links.txt
+sample.egg-info/entry_points.txt
+sample.egg-info/top_level.txt
