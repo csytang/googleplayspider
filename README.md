@@ -53,6 +53,8 @@ The output will be redirect to the sqlite DB named ```googleplay.db```, which co
   
 ## TODO List and ChangeLog
 
+TODO list for new features：[ToDo](./TODO.md)
+Change log：[changelog](./changelog.md)
   
 ## Developer
 For help, please contact __Yutian Tang__  via e-mail chris.yttang(AT)hotmail.com or create a new issue with the issue tracker.
@@ -107,7 +109,10 @@ For help, please contact __Yutian Tang__  via e-mail chris.yttang(AT)hotmail.com
 结果将被存储在一个sqlite数据库中，名称为```googleplay.db```。可以在本项目的根目录下找到。
 
 ## 待添加的新功能及版本变更日志
+待开发新功能：[ToDo](./TODO.md)
+版本变更日志：[changelog](./changelog.md)
 
-  
+
+
 ## 开发人员
  如需帮助请联系: __Yutian Tang__  通过邮件 e-mail chris.yttang(AT)hotmail.com 或 在Github中创建一个新的Issue。 
