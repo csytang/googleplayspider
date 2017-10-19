@@ -33,10 +33,12 @@ class Googleplayspider(CrawlSpider):
      please notice that the scrapy will check the first rule and the second, thrid
     '''
     rules = (
-        Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=.*&.*")),follow=True),
-        Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=")), callback='parselink',follow=False),
-        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=")), callback='parselink', follow=False),
-        Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps")),follow = True),
+        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=.*&.*")),follow=True),
+        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=")), callback='parselink',follow=True),
+        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=")), callback='parselink', follow=True),
+        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps")),follow = True),
+        Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details")), callback='parselink',
+             follow=True),
     )
 
     def parselink(self, response):
