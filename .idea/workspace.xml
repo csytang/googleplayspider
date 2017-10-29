@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6588406f-5555-40d3-a161-e34e85986005" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/googleplay.db-journal" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.pypirc" afterPath="$PROJECT_DIR$/.pypirc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/sample-1.0.tar.gz" afterPath="$PROJECT_DIR$/dist/sample-1.0.tar.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/googleplayspider.iml" afterPath="$PROJECT_DIR$/.idea/googleplayspider.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/__init__.py" afterPath="$PROJECT_DIR$/googleplayspider/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/items.py" afterPath="$PROJECT_DIR$/googleplayspider/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/pipelines.py" afterPath="$PROJECT_DIR$/googleplayspider/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/settings.py" afterPath="$PROJECT_DIR$/googleplayspider/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/spiders/__init__.py" afterPath="$PROJECT_DIR$/googleplayspider/spiders/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/spiders/crawler.py" afterPath="$PROJECT_DIR$/googleplayspider/spiders/crawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.egg-info/PKG-INFO" afterPath="$PROJECT_DIR$/sample.egg-info/PKG-INFO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.egg-info/SOURCES.txt" afterPath="$PROJECT_DIR$/sample.egg-info/SOURCES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.egg-info/dependency_links.txt" afterPath="$PROJECT_DIR$/sample.egg-info/dependency_links.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.egg-info/entry_points.txt" afterPath="$PROJECT_DIR$/sample.egg-info/entry_points.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.egg-info/top_level.txt" afterPath="$PROJECT_DIR$/sample.egg-info/top_level.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapy.cfg" afterPath="$PROJECT_DIR$/scrapy.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.cfg" afterPath="$PROJECT_DIR$/setup.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplay.json" afterPath="$PROJECT_DIR$/googleplay.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +28,7 @@
       <file leaf-file-name="crawler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="222">
               <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -450,9 +425,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="732" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2625202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2625202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2265625" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,7 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="222">
           <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
