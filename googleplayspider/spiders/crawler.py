@@ -23,9 +23,7 @@ class Googleplayspider(CrawlSpider):
 
     # start_urls to process
     start_urls =[
-        #'https://play.google.com/store/apps',
-        #'https://play.google.com/store/apps/details?id=com.instagram.android',
-        'https://play.google.com/store/apps/details?id=com.liquidator.ruaz404'
+        "https://play.google.com/store/apps/"
     ]
 
     # define the rule for Crawler
@@ -33,12 +31,8 @@ class Googleplayspider(CrawlSpider):
      please notice that the scrapy will check the first rule and the second, thrid
     '''
     rules = (
-        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=.*&.*")),follow=True),
-        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=")), callback='parselink',follow=True),
-        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details\?id=")), callback='parselink', follow=True),
-        #Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps")),follow = True),
-        Rule(LinkExtractor(allow=("^https://play\.google\.com/store/apps/details")), callback='parselink',
-             follow=True),
+        Rule(LinkExtractor(allow=(r'apps',), deny=(r'reviewId')), follow=True, callback='parselink'),
+        Rule(LinkExtractor(allow=('/store/apps')), follow=True)
     )
 
     def parselink(self, response):
@@ -109,11 +103,11 @@ class Googleplayspider(CrawlSpider):
 
         # price
         #item["Price"] = response.xpath('//*[@class="price buy id-track-click"]/span[2]/text()').extract_first()
-        price = response.xpath('//*[@class="subtitle-container"]/span/span[2]/button/span/text()').extract_first()
-        if price is not None:
-            item["Price"] = price.encode("utf-8")
+        price = response.xpath('//button[@class="price buy id-track-click id-track-impression"]/span[2]/text()').extract_first().strip()
+        if price != "Install":
+            item["Price"] = price
         else:
-            item["Price"] = ""
+            item["Price"] = "Free"
 
         # rating from user
         rating_value = response.xpath('//*[@class="score"]/text()').extract_first()
