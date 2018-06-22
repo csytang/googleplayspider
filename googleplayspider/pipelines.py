@@ -62,13 +62,12 @@ class GoogleplayspiderPipeline(object):
          Video_URL;Developer_ID ;
         '''
         self.cur.execute(
-            "CREATE TABLE IF NOT EXISTS" + " googleplay(Link VARCHAR(100),Item_name VARCHAR(50),"+
-            "Last_Updated VARCHAR(50),Author VARCHAR(30), Filesize VARCHAR(30), Downloads VARCHAR(50),"+
-            "Version VARCHAR(30),  Operation_system VARCHAR(50), Content_rating VARCHAR(30),"+
-            "Author_link VARCHAR(100),  Privacy_link VARCHAR(100), Genre VARCHAR(50), "+
-            "Price VARCHAR(30), Rating_value VARCHAR(20), Review_number VARCHAR(30),"+
-            "Description VARCHAR(50000), IAP VARCHAR(50), Developer_badge VARCHAR(50),"+
-            "Physical_address VARCHAR(100), Video_URL VARCHAR(50),Developer_ID VARCHAR(50))"
+            "CREATE TABLE IF NOT EXISTS" + " googleplay(Link VARCHAR(100),Item_name VARCHAR(50), "+
+            "Last_Updated VARCHAR(50), Filesize VARCHAR(30), Downloads VARCHAR(50),"+
+            "Version VARCHAR(30), Operation_system VARCHAR(50), Content_rating VARCHAR(30),"+
+            "Genre VARCHAR(50),"+
+            "Review_number VARCHAR(30),"+
+            "Description VARCHAR(50000))"
         )
 
 
@@ -91,10 +90,23 @@ class GoogleplayspiderPipeline(object):
             placeholders = ','.join(len(item) * '?')
             print('insert new value:'+item['Link'])
             sql = 'INSERT INTO googleplay({}) values({})'
-            self.cur.execute(sql.format(col, placeholders), item.values())
+            #self.cur.execute(sql.format(col, placeholders), item.values())
+            self.cur.execute("INSERT INTO googleplay(Link,Item_name,Last_Updated,"
+                             "Filesize,Downloads,Version,Operation_system,"
+                             "Content_rating,Genre,Review_number,"
+                             "Description)"
+                             "values(?,?,"
+                             "?,?,?,?,"
+                             "?,?,?,?,?)",
+                             (item['Link'],item['Item_name'],item['Last_Updated']
+                              ,item['Filesize'],item['Downloads'],item['Version'],item['Operation_system'],
+                              item['Content_rating'],
+                              item['Genre'],
+                              item['Review_number'],item['Description']))
+            self.con.commit()
 
             # json
-            line = json.dumps(dict(item), ensure_ascii=False, encoding='utf8', indent=4) + ','
+            line = json.dumps(dict(item), ensure_ascii=True, encoding='utf8', indent=4) + ','
             with open(fileName, 'a') as f:
-                f.write(line.encode('utf8'))
+                 f.write(line)
         return item

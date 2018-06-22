@@ -31,9 +31,8 @@ class Googleplayspider(CrawlSpider):
      please notice that the scrapy will check the first rule and the second, thrid
     '''
     rules = (
-        Rule(LinkExtractor(allow=(r'apps',), deny=(r'reviewId')), follow=True),
-        Rule(LinkExtractor(allow=('/store/apps',)),follow=True),
-        Rule(LinkExtractor(allow=('/store/apps/details\?')),follow=True,callback='parse_link')
+        Rule(LinkExtractor(allow=(r'apps',), deny=(r'reviewId')), follow=True, callback='parselink'),
+        Rule(LinkExtractor(allow=('/store/apps')), follow=True)
     )
 
     def parselink(self, response):
@@ -41,124 +40,96 @@ class Googleplayspider(CrawlSpider):
         item = GoogleplayspiderItem()
         # url of this app
 
+        if not str(response.url).startswith("https://play.google.com/store/apps/details?id="):
+            return
+
         item["Link"] = str(response.url)
         # return the name of this app
+		
+        tmpitemname = response.xpath('//*[@itemprop="name"]/span/text()').extract_first()
 
-        item["Item_name"] = response.xpath('//*[@class="document-title"]/div/text()').extract_first().encode("utf-8")
+        if tmpitemname is not None:
+            item["Item_name"] = tmpitemname.encode("utf-8")
+        else:
+            item["Item_name"] = ""
         # return the last update of this app
         '''
             u'2017\u5e748\u670830\u65e5'
             the return the update is the time slot, which is in unicode
         '''
 
-        item["Last_Updated"] = response.xpath('//*[@itemprop="datePublished"]/text()').extract_first().encode("utf-8")
-        # return the author of this app
-
-        item["Author"] = response.xpath('//*[@itemprop="author"]/a/span/text()').extract_first().encode("utf-8")
+        tmplastupdate = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][1]//span/text()').extract()[0]
+        if tmplastupdate is not None:
+            item["Last_Updated"] = tmplastupdate.encode("utf-8")
+        else:
+            item["Last_Updated"] = ""
 
         # return the file size of this app
         '''
         u'  \u56e0\u88dd\u7f6e\u800c\u7570 '
         '''
-        filesize = response.xpath('//*[@itemprop="fileSize"]/text()').extract_first()
+        filesize = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][2]//span/text()').extract_first()
         if filesize is not None:
             item["Filesize"] = filesize.encode("utf-8")
         else:
             item["Filesize"] = ""
 
         # return the downloads
-        item["Downloads"] = response.xpath('//*[@itemprop="numDownloads"]/text()').extract_first().encode("utf-8")
+        downloads = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][3]//span/text()').extract_first()
+        if downloads is not None:
+            item["Downloads"] = downloads.encode("utf-8")
+        else:
+            item["Downloads"] = ""
 
         # return the version of application
-        item["Version"] = str(response.xpath('//*[@itemprop="softwareVersion"]/text()').extract_first())
+        version = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][4]//span/text()').extract()[0]
+        if version is not None:
+            item["Version"] = version.encode("utf-8")
+        else:
+            item["Version"] = ""
 
         # return the operation system of the application
-        item["Operation_system"] = response.xpath('//*[@itemprop="operatingSystems"]/text()').extract_first().encode("utf-8")
+
+        operation_system = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][5]//span/text()').extract_first()
+        if operation_system is not None:
+            item["Operation_system"] = operation_system.encode("utf-8")
+        else:
+            item["Operation_system"] = ""
 
         # return the contaent rating for the age of
-        content_rating = response.xpath('//*[@itemprop="contentRating"]/text()').extract_first()
+        content_rating = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][6]//span/div/text()').extract_first()
         if content_rating is not None:
             item["Content_rating"] = content_rating.encode("utf-8")
         else:
             item["Content_rating"] = ""
 
-        # return the link of application provider
-        author_link = response.xpath('//*[@class="dev-link"]/@href').extract_first()
-        if author_link is not None:
-            item["Author_link"] = author_link.encode("utf-8")
-        else:
-            item["Author_link"] = ""
-
-        # return the link of privacy policy
-        if len(response.xpath('//*[@class="dev-link"]/@href')) >= 3:
-            privacy_link = response.xpath('//*[@class="dev-link"]/@href')[2].extract()
-            if privacy_link is not None:
-                item['Privacy_link'] = privacy_link.encode("utf-8")
-            else:
-                item['Privacy_link'] = ""
-        else:
-            item['Privacy_link'] = ""
 
         # category
-        item["Genre"] = response.xpath('//*[@itemprop="genre"]/text()').extract_first().encode("utf-8")
-
-        # price
-        #item["Price"] = response.xpath('//*[@class="price buy id-track-click"]/span[2]/text()').extract_first()
-        price = response.xpath('//button[@class="price buy id-track-click id-track-impression"]/span[2]/text()').extract_first().strip()
-        if price != "Install":
-            item["Price"] = price
+        genre = response.xpath('//*[@itemprop="genre"]/text()').extract_first()
+        if genre is not None:
+            item["Genre"] = genre.encode("utf-8")
         else:
-            item["Price"] = "Free"
+            item["Genre"] = ""
 
-        # rating from user
-        rating_value = response.xpath('//*[@class="score"]/text()').extract_first()
-        if rating_value is not None:
-            item["Rating_value"] = rating_value.encode("utf-8")
-        else:
-            item["Rating_value"] = ""
 
 
         # the number of reviews
-        item["Review_number"] = str(response.xpath('//*[@class="reviews-num"]/text()').extract_first())
-
+        review_count = response.xpath('//*[@id="fcxH9b"]//span[@class="AYi5wd TBRnV"]//text()').extract()[0]
+        if review_count is not None:
+            item["Review_number"] = review_count.encode("utf-8")
+        else:
+            item["Review_number"] = ""
 
         # the description of this app
-        item["Description"] = str(response.xpath('//*[@itemprop="description"]//text()').extract_first())
-
-
-        # the in app purchase of the app
-        iap = response.xpath('//*[@class="inapp-msg"]/text()').extract_first()
-        if iap is not None:
-            item["IAP"] = iap.encode("utf-8")
+        description_content = response.xpath('//*[@itemprop="description"]//text()').extract_first()
+        if description_content is not None:
+            item["Description"] = description_content.encode("utf-8")
         else:
-            item["IAP"] = ""
+            item["Description"] = ""
 
-        # the badge of developer
-        badge = response.xpath('//*[@class="badge-title"]//text()').extract_first()
-
-        if badge is not None:
-            item["Developer_badge"] = badge.encode("utf-8")
-        else:
-            item["Developer_badge"] = ""
-
-        # the address of developer
-        physicaladdr = response.xpath('//*[@class="content physical-address"]/text()').extract_first()
-
-        if physicaladdr is not None:
-            item["Physical_address"] = physicaladdr.encode("utf-8")
-        else:
-            item["Physical_address"] = ""
-
-        # the url of demo video
-        video_url = response.xpath('//*[@class="play-action-container"]/@data-video-url').extract_first()
-
-        if video_url is not None:
-            item["Video_URL"] = video_url.encode("utf-8")
-        else:
-            item["Video_URL"] = ""
 
         # the id of the developer
-        item["Developer_ID"] = response.xpath('//*[@itemprop="author"]/a/@href').extract_first().encode("utf-8")
+        #item["Developer_ID"] = response.xpath('//*[@id="fcxH9b"]//div[@class="hAyfc"][9]//span/div/text()').extract()[0]
 
         yield item
 

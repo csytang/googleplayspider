@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6588406f-5555-40d3-a161-e34e85986005" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/sample-1.0.tar.gz" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/googleplayspider.iml" afterPath="$PROJECT_DIR$/.idea/googleplayspider.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/items.py" afterPath="$PROJECT_DIR$/googleplayspider/items.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/pipelines.py" afterPath="$PROJECT_DIR$/googleplayspider/pipelines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/settings.py" afterPath="$PROJECT_DIR$/googleplayspider/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayspider/spiders/crawler.py" afterPath="$PROJECT_DIR$/googleplayspider/spiders/crawler.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,6 +18,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/googleplayspider$GooglePlaySpider.coverage" NAME="GooglePlaySpider Coverage Results" MODIFIED="1529657084785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -25,14 +36,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crawler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1463">
-              <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+            <state relative-caret-position="198">
+              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#223#404#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -40,8 +65,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleplayspider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="248">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -50,16 +75,61 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleplayspider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="108" column="59" lean-forward="false" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
               <folding>
                 <element signature="e#192#203#0" expanded="true" />
-                <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-                <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-                <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-                <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-                <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+                <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+                <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+                <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+                <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+                <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+                <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+                <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+                <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8445">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#139#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.cfg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scrapy.cfg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,6 +146,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>update</find>
+      <find>AYi5wd TBRnV</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,9 +157,11 @@
       <list>
         <option value="$PROJECT_DIR$/googleplayspider/spiders/Crawler.py" />
         <option value="$PROJECT_DIR$/googleplayspider/settings.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/googleplay.json" />
         <option value="$PROJECT_DIR$/googleplayspider/items.py" />
-        <option value="$PROJECT_DIR$/googleplayspider/pipelines.py" />
         <option value="$PROJECT_DIR$/googleplayspider/spiders/crawler.py" />
+        <option value="$PROJECT_DIR$/googleplayspider/pipelines.py" />
       </list>
     </option>
   </component>
@@ -109,9 +182,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="729" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -128,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,41 +214,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleplayspider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleplayspider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleplayspider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleplayspider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleplayspider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="googleplayspider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,7 +236,18 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.GooglePlaySpider">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -409,6 +462,27 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="GooglePlaySpider" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="googleplayspider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scrapy/cmdline.py" />
+      <option name="PARAMETERS" value="crawl GooglePlaySpider" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.GooglePlaySpider" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -423,28 +497,37 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="729" extended-state="6" />
+    <frame x="-2" y="22" width="1280" height="726" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3441034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2265625" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33753943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31083202" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30757096" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,16 +542,80 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/googleplayspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -487,11 +634,14 @@
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#192#203#0" expanded="true" />
-            <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-            <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
           </folding>
         </state>
       </provider>
@@ -502,6 +652,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -520,11 +671,14 @@
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#192#203#0" expanded="true" />
-            <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-            <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
           </folding>
         </state>
       </provider>
@@ -535,6 +689,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -553,11 +708,14 @@
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#192#203#0" expanded="true" />
-            <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-            <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
           </folding>
         </state>
       </provider>
@@ -568,6 +726,44 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,11 +782,14 @@
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#192#203#0" expanded="true" />
-            <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-            <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
           </folding>
         </state>
       </provider>
@@ -601,6 +800,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -618,19 +818,15 @@
           <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
             <element signature="e#192#203#0" expanded="true" />
-            <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-            <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -649,13 +845,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/googleplayspider/middlewares.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5670">
@@ -677,17 +866,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleplay.json" />
     <entry file="file://$USER_HOME$/Library/Python/3.4/lib/python/site-packages/urlparse2/urlparse2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/googleplayspider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -708,41 +889,166 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/googleplayspider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="71" column="56" lean-forward="true" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+        <state relative-caret-position="289">
+          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleplayspider/items.py">
+    <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scrapy/spiders/crawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/parsel/selector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1931">
+          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="1385" column="0" lean-forward="false" selection-start-line="1385" selection-start-column="0" selection-end-line="1385" selection-end-column="0" />
+          <folding>
+            <element signature="e#1205#1285#2" expanded="false" />
+            <element signature="e#1323#1400#2" expanded="false" />
+            <element signature="e#64078#64207#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/scrapy/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#139#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/googleplayspider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="108" column="59" lean-forward="false" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
           <folding>
             <element signature="e#192#203#0" expanded="true" />
-            <marker date="1504440687000" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
-            <marker date="1504440687000" expanded="true" signature="1460:2008" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2101" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="1460:2102" ph="CREATE TABLE... googleplay" />
-            <marker date="1504440687000" expanded="true" signature="2668:2705" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="1046:1077" ph="DROP TABLE I... " />
+            <marker date="1529657183783" expanded="true" signature="1460:1842" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="1460:1844" ph="CREATE TABLE... googleplay" />
+            <marker date="1529657183783" expanded="true" signature="2409:2446" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2604" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2728" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2791" ph="INSERT INTO googleplay... " />
+            <marker date="1529657183783" expanded="true" signature="2554:2917" ph="INSERT INTO googleplay... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplayspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/googleplayspider/spiders/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1463">
-          <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        <state relative-caret-position="198">
+          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#223#404#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplay.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5865">
+          <caret line="391" column="29" lean-forward="false" selection-start-line="391" selection-start-column="29" selection-end-line="391" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8445">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

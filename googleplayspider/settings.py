@@ -19,7 +19,6 @@ NEWSPIDER_MODULE = 'googleplayspider.spiders'
 #USER_AGENT = 'googleplayspider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
